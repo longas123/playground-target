@@ -1,12 +1,19 @@
 package enumeracoes;
 
-public enum ModalidadeCredito {
+public class ModalidadeCredito {
 
 
-    STANDARD,
-    GOLD,
-    PREMIUM,
-    BLACK;
+    public static TipoCartao obtemTipoDeCartao(double rendaMensal) {
+        if (rendaMensal < 1000) {
+            return TipoCartao.STANDARD;
+        }else if(rendaMensal < 3000){
+            return TipoCartao.GOLD;
+        }else if(rendaMensal < 10_000){
+            return TipoCartao.PREMIUM;
+        }else{
+            return TipoCartao.BLACK;
+        }
+    }
 
 
 
