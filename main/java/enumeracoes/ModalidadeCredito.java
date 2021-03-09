@@ -6,9 +6,7 @@ public enum ModalidadeCredito {
     STANDARD,
     GOLD,
     PREMIUM,
-    BLACK,
-
-
+    BLACK;
 
 
 
