@@ -6,10 +6,18 @@ public class ExercicioEnumeracoes {
 
     public static void main(String[] args) {
 
-        System.out.println(ModalidadeCredito.obtemTipoDeCartao(999));
-        System.out.println(ModalidadeCredito.obtemTipoDeCartao(2_999));
-        System.out.println(ModalidadeCredito.obtemTipoDeCartao(9_999));
-        System.out.println(ModalidadeCredito.obtemTipoDeCartao(10_001));
+//        System.out.println(ModalidadeCredito.obtemTipoDeCartao(999));
+//        System.out.println(ModalidadeCredito.obtemTipoDeCartao(2_999));
+//        System.out.println(ModalidadeCredito.obtemTipoDeCartao(9_999));
+//        System.out.println(ModalidadeCredito.obtemTipoDeCartao(10_001));
+
+        System.out.println(TaxaDeJuros.taxaJuros(TipoCartao.GOLD));
+        System.out.println(TaxaDeJuros.taxaJuros(TipoCartao.STANDARD));
+        System.out.println(TaxaDeJuros.taxaJuros(TipoCartao.BLACK));
+        System.out.println(TaxaDeJuros.taxaJuros(TipoCartao.PREMIUM));
+
+        System.out.println(TipoCartao.STANDARD.getTaxaJuros());
+        System.out.println(TipoCartao.obtemAPartirDaSigla(3.05F));
 
 //        System.out.println("Digite sua poupança para saber o tipo de Cartão");
 //        long valor = new Scanner(System.in).nextLong();
